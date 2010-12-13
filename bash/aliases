@@ -1,0 +1,42 @@
+# Useful aliases
+alias ls='ls -hF'
+alias ll='ls -lhF'
+alias l='ls -lAhF'
+alias cd..="cd .."
+alias c="clear"
+alias e="exit"
+alias ..="cd .."
+alias cl="c && l"
+alias syncar="rsync -Cravzp --progress"
+
+# Aliases SIATC
+alias revsvn='svn export ../../projetos_django . --force'
+alias revci='svn revert --recursive contrib/projeto.ci contrib/telecentros contrib/agenda portal_ci portal cadastro_telecentros.templates cadastro_telecentros cadastro_telecentros.media'
+
+# Aliases vcs
+alias abak="find . -name '*.bak' | xargs rm -rf"
+alias apyc="find . -name '*.pyc' -o -name '*.pyo' | xargs rm -rf"
+alias abck="find . -name '*~' | xargs rm -rf"
+alias asvn="find . -name '.svn' | xargs rm -rf"
+alias ahg="find . -name '.hg' | xargs rm -rf"
+alias arej="find . -name '*.rej' | xargs rm -rf"
+alias dpyc="find . -name '*.pyc' | xargs svn del"
+alias dsvn="find . -name '.svn' | xargs svn del"
+alias drej="find . -name '*.rej' | xargs svn del"
+alias addsvn="svn st | grep ^? | xargs svn add 2> /dev/null"
+alias cproj="apyc && arej && asvn && ahg && abck"
+
+# Aliases Genericos
+alias ef='find . -name '
+alias ea='mate ~/.aliases ~/.aliases_mac'
+alias upa='source ~/.bashrc'
+alias tf='sudo tail -f'
+alias edit='sudo vim'
+alias chown='sudo chown'
+alias chmod='sudo chmod'
+
+function m { command python manage.py "$@"; }
+function ps { command ps ww"$@"; }
+
+# jump
+alias jump="ssh -L 8080:localhost:8118 douglas@tunnel -C 'cat'"
