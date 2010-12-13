@@ -7,11 +7,12 @@ install-vim:
 	ln -s ~/.vim/vimrc ~/.vimrc
 
 install-bash:
-	rm -f ~/.bashrc ~/.custom_paths ~/.aliases
+	rm -f ~/.bashrc ~/.custom_paths ~/.aliases*
 	ln -s `pwd`/bash/bashrc ~/.bashrc
 	ln -s `pwd`/bash/custom_paths ~/.custom_paths
 	ln -s `pwd`/bash/aliases ~/.aliases
 	ln -s `pwd`/bash/aliases_mac ~/.aliases_mac
+	ln -s `pwd`/bash/aliases_dev ~/.aliases_dev
 	source ~/.bashrc
 
 install-virtualenvwrapper:
