@@ -9,10 +9,6 @@ alias ..="cd .."
 alias cl="c && l"
 alias syncar="rsync -Cravzp --progress"
 
-# Aliases SIATC
-alias revsvn='svn export ../../projetos_django . --force'
-alias revci='svn revert --recursive contrib/projeto.ci contrib/telecentros contrib/agenda portal_ci portal cadastro_telecentros.templates cadastro_telecentros cadastro_telecentros.media'
-
 # Aliases vcs
 alias abak="find . -name '*.bak' | xargs rm -rf"
 alias apyc="find . -name '*.pyc' -o -name '*.pyo' | xargs rm -rf"
