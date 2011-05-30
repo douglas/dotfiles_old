@@ -112,3 +112,14 @@ shopt -s histappend
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   source $(brew --prefix)/etc/bash_completion
 fi
+
+
+# Bash shell driver for 'go' (http://code.google.com/p/go-tool/).
+function go {
+    export GO_SHELL_SCRIPT=$HOME/.__tmp_go.sh
+    python -m go $*
+    if [ -f $GO_SHELL_SCRIPT ] ; then
+        source $GO_SHELL_SCRIPT
+    fi
+    unset GO_SHELL_SCRIPT
+}

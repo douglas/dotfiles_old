@@ -21,6 +21,7 @@ alias dsvn="find . -name '.svn' | xargs svn del"
 alias drej="find . -name '*.rej' | xargs svn del"
 alias addsvn="svn st | grep ^? | xargs svn add 2> /dev/null"
 alias cproj="apyc && arej && asvn && ahg && abck"
+alias git="hub"
 
 # Aliases Genericos
 alias ef='find . -name '
