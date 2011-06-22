@@ -8,8 +8,8 @@ alias ls='/bin/ls -G'
 alias detar="for i in *.gz; do tar -zxvf $i;done"
 alias fixperms='find . -type d -exec chmod 770 {} \;'
 
-alias psqlstart="pg_ctl -D $(brew --prefix)/var/postgres -l $(brew --prefix)/var/postgres/server.log start"
-alias psqlstop="pg_ctl -D $(brew --prefix)/var/postgres -l $(brew --prefix)/var/postgres/server.log stop"
+alias psqlstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias psqlstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 
 alias mysqlstart='mysql.server start'
 alias mysqlstop='mysql.server stop'
