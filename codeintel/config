@@ -1,0 +1,12 @@
+{
+    "Python": {
+        "python": '/Users/douglas/work/ambientes/django/bin/python',
+        "pythonExtraPaths": ['/Users/douglas/work/ambientes/django/lib/python2.7/site-packages',
+                             '/usr/local/Cellar/python/2.7.1/lib/python2.7/site-packages',
+                             '/Users/douglas/work/planejamento/projetos_django',
+                             '/Users/douglas/work/planejamento/projetos_django/apps_logicas',
+                             '/Users/douglas/work/planejamento/projetos_django/contrib',
+        ]
+    },
+
+}
