@@ -29,15 +29,6 @@ mitsuhikos_vcprompt() {
   $vcprompt -f $' on \033[34m%n\033[00m:\033[00m%[unknown]b\033[32m%m%u'
 }
 
-mitsuhikos_lastcommandfailed() {
-  code=$?
-  if [ $code != 0 ]; then
-    echo -n $'\033[37m exited \033[31m'
-    echo -n $code
-    echo -n $'\033[37m'
-  fi
-}
-
 mitsuhikos_backgroundjobs() {
   jobs|python -Sc 'if 1:
     import sys
@@ -52,11 +43,10 @@ mitsuhikos_backgroundjobs() {
   '
 }
  
-export MITSUHIKOS_BASEPROMPT='\n\e${MITSUHIKOS_ORANGE_COLOR}(\t) \e${MITSUHIKOS_DEFAULT_COLOR} - \
+export MITSUHIKOS_BASEPROMPT='\n\e${MITSUHIKOS_ORANGE_COLOR}(\t) \e${MITSUHIKOS_DEFAULT_COLOR}- \
 \e${MITSUHIKOS_USER_COLOR}\u \
 \e${MITSUHIKOS_GRAY_COLOR}at \e${MITSUHIKOS_ORANGE_COLOR}\h \
-\e${MITSUHIKOS_GRAY_COLOR}in \e${MITSUHIKOS_GREEN_COLOR}\w\
-`mitsuhikos_lastcommandfailed`\
+\e${MITSUHIKOS_GRAY_COLOR}in \e${MITSUHIKOS_GREEN_COLOR}\W\
 \e${MITSUHIKOS_GRAY_COLOR}$(mitsuhikos_vcprompt)\
 `mitsuhikos_backgroundjobs`\
 \e${MITSUHIKOS_DEFAULT_COLOR}'
@@ -73,6 +63,7 @@ else
   alias ls='ls --color=auto'
 fi
 
+export MACOSX_DEPLOYMENT_TARGET=10.6
 export IGNOREEOF=1
 export PYTHONDONTWRITEBYTECODE=1
 export LESS=FRSX
@@ -107,7 +98,7 @@ unp() {
 }
 
 # pythonrc
-export PYTHONSTARTUP=~/.pythonrc
+#export PYTHONSTARTUP=~/.pythonrc
 
 shopt -s histappend
 

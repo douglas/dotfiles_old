@@ -5,6 +5,7 @@ alias fdns='sudo dscacheutil -flushcache'
 alias ls='/bin/ls -G'
 
 # Aliases mac
+alias uxcode="sudo /Developer/Library/uninstall-devtools –mode=all"
 alias detar="for i in *.gz; do tar -zxvf $i;done"
 alias fixperms='find . -type d -exec chmod 770 {} \;'
 
