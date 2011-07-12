@@ -1,0 +1,23 @@
+syntax: glob
+
+*.kpf
+*.o
+*.lo
+*.la
+*.rej
+*.orig
+.*~
+*.bak
+.DS_Store
+*.pyc
+*.pydevproject
+.project
+.settings
+pqs_indesign
+*.egg-link
+*.egg-info*
+*.db
+*.lock
+*.log
+parameters_8000.py
+127-0-0-1*

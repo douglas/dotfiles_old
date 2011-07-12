@@ -1,0 +1,17 @@
+[user]
+	email = contato@douglasandrade.com
+	name = Douglas Soares de Andrade
+[github]
+	user = dsarch
+	token = e86b6b1a79b3cb3413cbaf4c10ac8398
+[color]
+  	diff = auto
+  	status = auto
+  	branch = auto
+  	interactive = auto
+  	ui = true
+  	pager = true
+[alias]
+	st = status -sb
+	ci = commit
+	co = checkout

@@ -1,0 +1,18 @@
+[trusted]
+users = *
+groups = *
+
+[ui]
+username = Douglas Soares de Andrade <contato@douglasandrade.com>
+ignore = ~/.hgignore
+report_untrusted = False
+ssh = ssh -C
+
+[extensions]
+hgext.convert =
+color =
+hggit =
+
+[defaults]
+commit = -v
+push = -v
