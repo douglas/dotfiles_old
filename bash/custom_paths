@@ -1,5 +1,9 @@
-export PATH=/Users/douglas/work/config/dotfiles/jshint/env:/Users/douglas/.gem/ruby/1.8/bin:/usr/local/share/python:/usr/local/bin:/usr/local/sbin:$PATH
+#export PATH=/Users/douglas/work/config/dotfiles/jshint/env:/Users/douglas/.gem/ruby/1.8/bin:/usr/local/share/python:/usr/local/bin:/usr/local/sbin:$PATH
 
-vcprompt=/Users/douglas/work/code/hg/vcprompt/vcprompt
-path_workon=/Users/douglas/work/ambientes
-path_vw=/usr/local/share/python/virtualenvwrapper.sh
+#vcprompt=/Users/douglas/work/code/hg/vcprompt/vcprompt
+#path_workon=/Users/douglas/work/ambientes
+#path_vw=/usr/local/share/python/virtualenvwrapper.sh
+
+vcprompt=/home/douglas/work/config/vcprompt/vcprompt
+path_workon=/home/douglas/work/ambientes
+path_vw=/usr/local/bin/virtualenvwrapper.sh

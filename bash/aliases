@@ -24,7 +24,7 @@ alias cproj="apyc && arej && asvn && ahg && abck"
 
 # Aliases Genericos
 alias ef='find . -name '
-alias ea='mate ~/.aliases ~/.aliases_mac'
+alias ea='subl ~/.aliases ~/.aliases_mac &'
 alias upa='source ~/.bashrc'
 alias tf='sudo tail -f'
 alias edit='sudo vim'
