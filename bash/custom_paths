@@ -3,5 +3,3 @@ export PATH=/Users/douglas/work/config/dotfiles/jshint/env:/usr/local/Cellar/rub
 vcprompt=/Users/douglas/work/code/hg/vcprompt/vcprompt
 path_workon=/Users/douglas/work/ambientes
 path_vw=/usr/local/share/python/virtualenvwrapper.sh
-
-# sublime: syntax 'Packages/ShellScript/Shell-Unix-Generic.tmLanguage'
