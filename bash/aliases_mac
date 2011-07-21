@@ -7,7 +7,8 @@ alias ls='/bin/ls -G'
 # Aliases mac
 alias uxcode="sudo /Developer/Library/uninstall-devtools –mode=all"
 alias detar="for i in *.gz; do tar -zxvf $i;done"
-alias fixperms='find . -type d -exec chmod 770 {} \;'
+alias fixdperms='find . -type d -exec chmod 770 {} \;'
+alias fixfperms='find . -type f -exec chmod 644 {} \;'
 
 alias psqlstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias psqlstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
@@ -22,3 +23,5 @@ alias apachestart="sudo /opt/local/apache2/bin/apachectl start"
 
 #alias nginxstart="sudo launchctl start org.macports.nginx"
 #alias nginxstop="sudo launchctl stop org.macports.nginx"
+
+# sublime: syntax 'Packages/ShellScript/Shell-Unix-Generic.tmLanguage'

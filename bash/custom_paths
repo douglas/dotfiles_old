@@ -1,5 +1,7 @@
-export PATH=/Users/douglas/work/config/dotfiles/jshint/env:/Users/douglas/.gem/ruby/1.8/bin:/usr/local/share/python:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/Users/douglas/work/config/dotfiles/jshint/env:/usr/local/Cellar/ruby/1.9.2-p180/bin:/usr/local/share/python:/usr/local/bin:/usr/local/sbin:$PATH
 
 vcprompt=/Users/douglas/work/code/hg/vcprompt/vcprompt
 path_workon=/Users/douglas/work/ambientes
 path_vw=/usr/local/share/python/virtualenvwrapper.sh
+
+# sublime: syntax 'Packages/ShellScript/Shell-Unix-Generic.tmLanguage'

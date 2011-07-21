@@ -117,3 +117,6 @@ function go {
     fi
     unset GO_SHELL_SCRIPT
 }
+
+
+# sublime: syntax 'Packages/ShellScript/Shell-Unix-Generic.tmLanguage'

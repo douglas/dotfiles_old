@@ -1,3 +1,5 @@
 # Aliases SIATC
 alias revsvn='svn export ../../projetos_django . --force'
 alias revci='svn revert --recursive contrib/projeto.ci contrib/telecentros contrib/agenda portal_ci portal cadastro_telecentros.templates cadastro_telecentros cadastro_telecentros.media'
+
+# sublime: syntax 'Packages/ShellScript/Shell-Unix-Generic.tmLanguage'
