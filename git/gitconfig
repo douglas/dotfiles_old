@@ -12,7 +12,20 @@
     pager = true
 [alias]
     st = status -sb
+    di = diff
     ci = commit
     co = checkout
     ptags = push --tags
+    br = branch
+    l  = log --oneline --decorate --graph
+    fix = commit --amend -C HEAD
+    time = log --graph --branches --pretty=oneline --decorate
     rv = remote -v
+[branch]
+    autosetuprebase = always
+[apply]
+    whitespace = fix
+[push]
+    default = tracking
+[core]
+    excludesfile = /Users/douglas/.gitignore

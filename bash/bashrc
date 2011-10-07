@@ -14,6 +14,10 @@
 export EDITOR=vim
 
 MITSUHIKOS_DEFAULT_COLOR="[00m"
+
+if [[ ${EUID} == 0 ]] ; then
+    export PS1=’\[\033[01;31m\]\h\[\033[01;34m\] \W \$\[\033[00m\] ‘
+else
 MITSUHIKOS_GRAY_COLOR="[37m"
 MITSUHIKOS_PINK_COLOR="[35m"
 MITSUHIKOS_GREEN_COLOR="[32m"
@@ -35,8 +39,10 @@ export MITSUHIKOS_BASEPROMPT='\n\e${MITSUHIKOS_ORANGE_COLOR}(\t) \e${MITSUHIKOS_
 \e${MITSUHIKOS_GRAY_COLOR}in \e${MITSUHIKOS_GREEN_COLOR}\W\
 \e${MITSUHIKOS_GRAY_COLOR}$(mitsuhikos_vcprompt)\
 \e${MITSUHIKOS_DEFAULT_COLOR}'
+
 export PS1="${MITSUHIKOS_BASEPROMPT}
 $ "
+fi
 
 export TERM=xterm-color
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
